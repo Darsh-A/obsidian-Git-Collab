@@ -180,7 +180,7 @@ export class gitCollabSettingTab extends PluginSettingTab {
 
             new Setting(statusContainer)
                 .setName('Settings not set Status Text')
-                .setDesc('The actual label displayed when settings are not set.')
+                .setDesc('The label displayed when settings are not set.')
                 .addTextArea(text => text
                     .setValue(this.plugin.settings.settingsNotSetStatus)
                     .onChange(async (value) => {
@@ -202,7 +202,7 @@ export class gitCollabSettingTab extends PluginSettingTab {
                     
             new Setting(statusContainer)
                 .setName('No Commits Found Status Text')
-                .setDesc('The actual label displayed when no commits were found. Restart Obsidian for it to take effect.')
+                .setDesc('The label displayed when no commits were found. Restart Obsidian for it to take effect.')
                 .addTextArea(text => text
                     .setValue(this.plugin.settings.noCommitsFoundStatus)
                     .onChange(async (value) => {
@@ -224,7 +224,7 @@ export class gitCollabSettingTab extends PluginSettingTab {
             
             new Setting(statusContainer)
                 .setName('File Editable Status Text')
-                .setDesc('The actual label displayed when a file can be edited.')
+                .setDesc('The label displayed when a file can be edited.')
                 .addTextArea(text => text
                     .setValue(this.plugin.settings.fileEditableStatus)
                     .onChange(async (value) => {
@@ -235,7 +235,7 @@ export class gitCollabSettingTab extends PluginSettingTab {
             
             new Setting(statusContainer)
                 .setName('File Not Editable Status Text')
-                .setDesc('The actual label displayed when a file is edited by someone else.')
+                .setDesc('The label displayed when a file is edited by someone else.')
                 .addTextArea(text => text
                     .setValue(this.plugin.settings.fileNotEditableStatus)
                     .onChange(async (value) => {
